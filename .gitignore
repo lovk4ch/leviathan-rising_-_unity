@@ -2,13 +2,19 @@
 #
 # Get latest from https://github.com/github/gitignore/blob/master/Unity.gitignore
 #
+/[Aa]ssets/[Aa]ssets/
+/[Aa]ssets/[Gg]izmos/
 /[Ll]ibrary/
 /[Tt]emp/
 /[Oo]bj/
 /[Bb]uild/
 /[Bb]uilds/
 /[Ll]ogs/
+/[Pp]romotion/
 /[Mm]emoryCaptures/
+
+# Other files
+*.psd
 
 # Asset meta data should only be ignored when the corresponding asset is also ignored
 !/[Aa]ssets/**/*.meta
