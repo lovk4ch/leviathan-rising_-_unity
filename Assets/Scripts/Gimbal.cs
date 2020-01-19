@@ -1,5 +1,4 @@
-﻿using Cinemachine;
-using System.Collections;
+﻿using System.Collections;
 using UnityEngine;
 using UnityStandardAssets.ImageEffects;
 using static ShakeTransform;
@@ -88,11 +87,11 @@ public class Gimbal : Manager<Gimbal>, IPlayerObserver
                 mouseY -= InputManager.Instance.GetAxis(InputManager.MOUSE_Y) * m_rotationSpeed * delta;
 
                 transform.position = target.transform.position;
-                /*if (mouseY < -30 - smoothScale.z * 3)
+                if (mouseY < -30 - smoothScale.z * 3)
                     mouseY = -30 - smoothScale.z * 3;
                 else
                 if (mouseY > 60)
-                    mouseY = 60;*/
+                    mouseY = 60;
                 depthScript.focalLength = (depthScript.transform.position - target.transform.position).magnitude;
                 transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(mouseY, mouseX, 0),
                     m_speed * delta);
